@@ -1,4 +1,5 @@
 using Neo.IO;
+using Neo.Types;
 using System;
 using System.Collections.Generic;
 using System.IO;

@@ -72,7 +72,7 @@ namespace Neo.Cryptography
             var leadingZeros = new byte[leadingZeroCount];
             if (bi.IsZero) return leadingZeros;
             var bytesWithoutLeadingZeros = bi.ToByteArray(isUnsigned: true, isBigEndian: true);
-            return Concat(leadingZeros, bytesWithoutLeadingZeros);
+            return Core.Helper.Concat(leadingZeros, bytesWithoutLeadingZeros);
         }
 
         /// <summary>

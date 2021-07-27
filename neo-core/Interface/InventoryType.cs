@@ -8,16 +8,16 @@ namespace Neo.Interface
         /// <summary>
         /// Indicates that the inventory is a <see cref="Transaction"/>.
         /// </summary>
-        TX = MessageCommand.Transaction,
+        TX = 0x2b,//MessageCommand.Transaction,
 
         /// <summary>
         /// Indicates that the inventory is a <see cref="Block"/>.
         /// </summary>
-        Block = MessageCommand.Block,
+        Block = 0x2c,// MessageCommand.Block,
 
         /// <summary>
         /// Indicates that the inventory is an <see cref="ExtensiblePayload"/>.
         /// </summary>
-        Extensible = MessageCommand.Extensible
+        Extensible = 0x2e,// MessageCommand.Extensible
     }
 }
