@@ -1,8 +1,8 @@
-using Neo.IO;
+using Neo.Core;
+using Neo.Interface;
 using System;
 using System.IO;
 using System.Numerics;
-using static Neo.Helper;
 
 namespace Neo.Cryptography.ECC
 {
@@ -209,8 +209,8 @@ namespace Neo.Cryptography.ECC
             return bytes.Length switch
             {
                 33 or 65 => DecodePoint(bytes, curve),
-                64 or 72 => DecodePoint(Concat(new byte[] { 0x04 }, bytes[^64..]), curve),
-                96 or 104 => DecodePoint(Concat(new byte[] { 0x04 }, bytes[^96..^32]), curve),
+                64 or 72 => DecodePoint(Core.Helper.Concat(new byte[] { 0x04 }, bytes[^64..]), curve),
+                96 or 104 => DecodePoint(Core.Helper.Concat(new byte[] { 0x04 }, bytes[^96..^32]), curve),
                 _ => throw new FormatException(),
             };
         }

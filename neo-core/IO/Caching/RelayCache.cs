@@ -1,4 +1,6 @@
-using Neo.Network.P2P.Payloads;
+
+using Neo.Interface;
+using Neo.Types;
 
 namespace Neo.IO.Caching
 {

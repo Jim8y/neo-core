@@ -1,4 +1,6 @@
 using K4os.Compression.LZ4;
+using Neo.Core;
+using Neo.Interface;
 using System;
 using System.Buffers;
 using System.Buffers.Binary;

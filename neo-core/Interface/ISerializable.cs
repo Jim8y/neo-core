@@ -1,6 +1,6 @@
 using System.IO;
 
-namespace Neo.IO
+namespace Neo.Interface
 {
     /// <summary>
     /// Represents NEO objects that can be serialized.
