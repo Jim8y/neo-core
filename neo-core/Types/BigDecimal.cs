@@ -1,7 +1,7 @@
 using System;
 using System.Numerics;
 
-namespace Neo.Types
+namespace Neo
 {
     /// <summary>
     /// Represents a fixed-point number of arbitrary precision.

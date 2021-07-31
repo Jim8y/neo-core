@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Numerics;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// Represents a memory block that can be used for reading and writing in the VM.

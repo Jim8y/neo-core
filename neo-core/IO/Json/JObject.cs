@@ -1,4 +1,3 @@
-using Neo.Core;
 using Neo.IO.Caching;
 using System;
 using System.Collections.Generic;

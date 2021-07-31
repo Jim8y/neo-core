@@ -1,9 +1,9 @@
 using Neo.Cryptography;
 using Neo.IO;
-using Neo.Types;
+using Neo.Network.P2P.Payloads;
 using System.IO;
 
-namespace Neo.Interface
+namespace Neo.Network.P2P
 {
     /// <summary>
     /// A helper class for <see cref="IVerifiable"/>.

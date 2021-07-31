@@ -1,12 +1,10 @@
-using Neo.Core;
-using Neo.Interface;
 using Neo.IO;
 using System;
 using System.Globalization;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace Neo.Types
+namespace Neo
 {
     /// <summary>
     /// Represents a 256-bit unsigned integer.

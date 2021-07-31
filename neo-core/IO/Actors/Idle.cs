@@ -1,6 +1,6 @@
 namespace Neo.IO.Actors
 {
-    public sealed class Idle
+    internal sealed class Idle
     {
         public static Idle Instance { get; } = new Idle();
     }

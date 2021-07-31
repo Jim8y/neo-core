@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// Represents an array or a complex object in the VM.

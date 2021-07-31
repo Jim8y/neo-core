@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Neo.Core
+namespace Neo
 {
     /// <summary>
     /// A helper class that provides common functions.

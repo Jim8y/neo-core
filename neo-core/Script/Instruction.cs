@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Neo.Scripts
+namespace Neo.VM
 {
     /// <summary>
     /// Represents instructions in the VM script.

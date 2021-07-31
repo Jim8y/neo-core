@@ -1,12 +1,11 @@
 #pragma warning disable CS0659
 
-using Neo.Core;
 using System;
 using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// The base class for all types in the VM.

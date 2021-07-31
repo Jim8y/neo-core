@@ -1,9 +1,8 @@
-using Neo.Core;
 using System;
 using System.IO;
 using System.Numerics;
 
-namespace Neo.Scripts
+namespace Neo.VM
 {
     /// <summary>
     /// A helper class for building scripts.

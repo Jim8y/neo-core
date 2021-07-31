@@ -1,5 +1,3 @@
-using Neo.Types;
-
 namespace Neo.Cryptography
 {
     internal class MerkleTreeNode

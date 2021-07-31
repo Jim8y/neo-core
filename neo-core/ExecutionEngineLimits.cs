@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.CompilerServices;
 
-namespace Neo.Core
+namespace Neo.VM
 {
     /// <summary>
     /// Represents the restrictions on the VM.

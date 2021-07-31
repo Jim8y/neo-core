@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// Represents a boolean (<see langword="true" /> or <see langword="false" />) value in the VM.

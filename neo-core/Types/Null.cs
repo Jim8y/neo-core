@@ -1,6 +1,6 @@
 using System;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// Represents <see langword="null"/> in the VM.

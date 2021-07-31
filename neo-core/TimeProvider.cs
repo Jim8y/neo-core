@@ -1,6 +1,6 @@
 using System;
 
-namespace Neo.Core
+namespace Neo
 {
     /// <summary>
     /// The time provider for the NEO system.

@@ -1,4 +1,3 @@
-using Neo.Core;
 using System;
 using System.Numerics;
 

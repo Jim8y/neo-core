@@ -1,4 +1,4 @@
-namespace Neo.Interface
+namespace Neo.Network.P2P.Payloads
 {
     /// <summary>
     /// Represents the type of an inventory.
@@ -13,11 +13,11 @@ namespace Neo.Interface
         /// <summary>
         /// Indicates that the inventory is a <see cref="Block"/>.
         /// </summary>
-        Block = 0x2c,// MessageCommand.Block,
+        Block = 0x2c,//MessageCommand.Block,
 
         /// <summary>
         /// Indicates that the inventory is an <see cref="ExtensiblePayload"/>.
         /// </summary>
-        Extensible = 0x2e,// MessageCommand.Extensible
+        Extensible = 0x2e,//MessageCommand.Extensible
     }
 }

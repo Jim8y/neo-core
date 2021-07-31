@@ -1,11 +1,27 @@
-using System;
-using System.Numerics;
+using Akka.Actor;
+using Akka.Event;
+using Neo.Plugins;
 using System.Text;
 
-namespace Neo.Core
+namespace Neo
 {
+    /// <summary>
+    /// A utility class that provides common functions.
+    /// </summary>
     public static class Utility
     {
+        internal class Logger : ReceiveActor
+        {
+            public Logger()
+            {
+                Receive<InitializeLogger>(_ => Sender.Tell(new LoggerInitialized()));
+                Receive<LogEvent>(e => Log(e.LogSource, (LogLevel)e.LogLevel(), e.Message));
+            }
+        }
+
+        /// <summary>
+        /// A strict UTF8 encoding used in NEO system.
+        /// </summary>
         public static Encoding StrictUTF8 { get; }
 
         static Utility()
@@ -15,21 +31,16 @@ namespace Neo.Core
             StrictUTF8.EncoderFallback = EncoderFallback.ExceptionFallback;
         }
 
-        public static BigInteger Sqrt(this BigInteger value)
+        /// <summary>
+        /// Writes a log.
+        /// </summary>
+        /// <param name="source">The source of the log. Used to identify the producer of the log.</param>
+        /// <param name="level">The level of the log.</param>
+        /// <param name="message">The message of the log.</param>
+        public static void Log(string source, LogLevel level, object message)
         {
-            if (value < 0) throw new InvalidOperationException("value can not be negative");
-            if (value.IsZero) return BigInteger.Zero;
-            if (value < 4) return BigInteger.One;
-
-            var z = value;
-            var x = BigInteger.One << (int)(((value - 1).GetBitLength() + 1) >> 1);
-            while (x < z)
-            {
-                z = x;
-                x = (value / x + x) / 2;
-            }
-
-            return z;
+            foreach (ILogPlugin plugin in Plugin.Loggers)
+                plugin.Log(source, level, message);
         }
     }
 }

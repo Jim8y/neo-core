@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using Neo.Core;
+
 namespace Neo.IO.Caching
 {
-    public abstract class Cache<TKey, TValue> : ICollection<TValue>, IDisposable
+    internal abstract class Cache<TKey, TValue> : ICollection<TValue>, IDisposable
     {
         protected class CacheItem
         {

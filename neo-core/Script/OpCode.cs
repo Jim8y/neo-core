@@ -1,6 +1,6 @@
-using Neo.Types;
+using Neo.VM.Types;
 
-namespace Neo.Scripts
+namespace Neo.VM
 {
     /// <summary>
     /// Represents the opcode of an <see cref="Instruction"/>.

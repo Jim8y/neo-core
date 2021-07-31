@@ -1,6 +1,6 @@
 using System;
 
-namespace Neo.Scripts
+namespace Neo.VM
 {
     /// <summary>
     /// Indicates the operand length of an <see cref="OpCode"/>.

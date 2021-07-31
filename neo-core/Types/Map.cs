@@ -1,11 +1,11 @@
-using Neo.Types.Collections;
+using Neo.VM.Collections;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// Represents an ordered collection of key-value pairs in the VM.

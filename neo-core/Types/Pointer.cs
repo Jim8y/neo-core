@@ -1,8 +1,7 @@
-using Neo.Scripts;
 using System;
 using System.Diagnostics;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// Represents the instruction pointer in the VM, used as the target of jump instructions.

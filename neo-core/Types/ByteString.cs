@@ -1,12 +1,11 @@
-using Neo.Core;
-using Neo.Cryptography;
+using Neo.VM.Cryptography;
 using System;
 using System.Buffers.Binary;
 using System.Diagnostics;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// Represents an immutable memory block in the VM.

@@ -1,8 +1,7 @@
-using Neo.Core;
 using System;
 using System.Collections.Generic;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// Represents a structure in the VM.

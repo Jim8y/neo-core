@@ -1,11 +1,9 @@
 using Neo.IO;
-using Neo.Types;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using Array = System.Array;
 
 namespace Neo.Cryptography
 {

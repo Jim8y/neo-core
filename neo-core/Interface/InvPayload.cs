@@ -1,10 +1,9 @@
 using Neo.IO;
-using Neo.Types;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Neo.Interface
+namespace Neo.Network.P2P.Payloads
 {
     /// <summary>
     /// This message is sent to relay inventories.

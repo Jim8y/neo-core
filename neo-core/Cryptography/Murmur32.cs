@@ -8,7 +8,7 @@ namespace Neo.Cryptography
     /// <summary>
     /// Computes the murmur hash for the input data.
     /// </summary>
-    sealed class Murmur32 : HashAlgorithm
+    public sealed class Murmur32 : HashAlgorithm
     {
         private const uint c1 = 0xcc9e2d51;
         private const uint c2 = 0x1b873593;

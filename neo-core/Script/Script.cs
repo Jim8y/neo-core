@@ -1,10 +1,10 @@
-using Neo.Types;
+using Neo.VM.Types;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
-namespace Neo.Scripts
+namespace Neo.VM
 {
     /// <summary>
     /// Represents the script executed in the VM.

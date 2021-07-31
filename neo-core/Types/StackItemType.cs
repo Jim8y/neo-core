@@ -1,4 +1,4 @@
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// An enumeration representing the types in the VM.

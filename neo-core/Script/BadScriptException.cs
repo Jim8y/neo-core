@@ -1,6 +1,6 @@
 using System;
 
-namespace Neo.Scripts
+namespace Neo.VM
 {
     /// <summary>
     /// Represents the exception thrown when the bad script is parsed.

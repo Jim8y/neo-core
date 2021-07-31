@@ -1,8 +1,8 @@
 using Neo.IO;
-using Neo.Types;
+//using Neo.Persistence;
 using System.IO;
 
-namespace Neo.Interface
+namespace Neo.Network.P2P.Payloads
 {
     /// <summary>
     /// Represents an object that can be verified in the NEO network.
@@ -17,7 +17,7 @@ namespace Neo.Interface
         /// <summary>
         /// The witnesses of the <see cref="IVerifiable"/> object.
         /// </summary>
-        public ISerializable[] Witnesses { get; set; }
+        Witness[] Witnesses { get; set; }
 
         /// <summary>
         /// Deserializes the part of the <see cref="IVerifiable"/> object other than <see cref="Witnesses"/>.
@@ -30,7 +30,7 @@ namespace Neo.Interface
         /// </summary>
         /// <param name="snapshot">The snapshot to be used.</param>
         /// <returns>The script hashes that should be verified.</returns>
-        UInt160[] GetScriptHashesForVerifying(IDataCache snapshot);
+        UInt160[] GetScriptHashesForVerifying(DataCache snapshot);
 
         /// <summary>
         /// Serializes the part of the <see cref="IVerifiable"/> object other than <see cref="Witnesses"/>.

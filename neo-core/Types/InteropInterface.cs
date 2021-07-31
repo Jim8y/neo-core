@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// Represents an interface used to interoperate with the outside of the the VM.

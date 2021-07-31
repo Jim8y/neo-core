@@ -1,10 +1,8 @@
-
-using Neo.Interface;
-using Neo.Types;
+using Neo.Network.P2P.Payloads;
 
 namespace Neo.IO.Caching
 {
-    public class RelayCache : FIFOCache<UInt256, IInventory>
+    internal class RelayCache : FIFOCache<UInt256, IInventory>
     {
         public RelayCache(int max_capacity)
             : base(max_capacity)

@@ -6,7 +6,7 @@ using System.Collections;
 
 namespace Neo.IO.Actors
 {
-    public abstract class PriorityMailbox : MailboxType, IProducesMessageQueue<PriorityMessageQueue>
+    internal abstract class PriorityMailbox : MailboxType, IProducesMessageQueue<PriorityMessageQueue>
     {
         public PriorityMailbox(Akka.Actor.Settings settings, Config config)
             : base(settings, config)
@@ -18,7 +18,7 @@ namespace Neo.IO.Actors
             return new PriorityMessageQueue(ShallDrop, IsHighPriority);
         }
 
-        public virtual bool IsHighPriority(object message) => false;
-        public virtual bool ShallDrop(object message, IEnumerable queue) => false;
+        internal protected virtual bool IsHighPriority(object message) => false;
+        internal protected virtual bool ShallDrop(object message, IEnumerable queue) => false;
     }
 }

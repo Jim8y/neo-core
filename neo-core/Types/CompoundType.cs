@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Neo.Types
+namespace Neo.VM.Types
 {
     /// <summary>
     /// The base class for complex types in the VM.
