@@ -1,10 +1,11 @@
+using Neo.Interface;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 
 namespace Neo.IO.Caching
 {
-    internal static class ReflectionCache<T> where T : Enum
+    public static class ReflectionCache<T> where T : Enum
     {
         private static readonly Dictionary<T, Type> dictionary = new();
 

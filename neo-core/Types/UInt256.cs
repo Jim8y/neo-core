@@ -1,3 +1,4 @@
+using Neo.Interface;
 using Neo.IO;
 using System;
 using System.Globalization;

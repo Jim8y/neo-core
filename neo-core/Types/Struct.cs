@@ -77,7 +77,7 @@ namespace Neo.VM.Types
             throw new NotSupportedException();
         }
 
-        internal override bool Equals(StackItem? other, ExecutionEngineLimits limits)
+        public override bool Equals(StackItem? other, ExecutionEngineLimits limits)
         {
             if (other is not Struct s) return false;
             Stack<StackItem> stack1 = new();
