@@ -4,7 +4,7 @@ using Neo.Types;
 
 namespace Neo.IO.Caching
 {
-    internal class RelayCache : FIFOCache<UInt256, IInventory>
+    public class RelayCache : FIFOCache<UInt256, IInventory>
     {
         public RelayCache(int max_capacity)
             : base(max_capacity)

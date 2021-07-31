@@ -24,7 +24,7 @@ namespace Neo.Types
         /// </summary>
         public int Count => references_count;
 
-        internal void AddReference(StackItem referred, CompoundType parent)
+        public void AddReference(StackItem referred, CompoundType parent)
         {
             references_count++;
             if (referred is not CompoundType compound) return;
@@ -49,12 +49,12 @@ namespace Neo.Types
             tracing.ObjectReferences[parent] = count;
         }
 
-        internal void AddReferences(int count)
+        public void AddReferences(int count)
         {
             references_count += count;
         }
 
-        internal void AddStackReference(StackItem referred)
+        public void AddStackReference(StackItem referred)
         {
             references_count++;
             if (referred is not CompoundType compound) return;
@@ -65,12 +65,12 @@ namespace Neo.Types
             zero_referred.Remove(compound);
         }
 
-        internal void AddZeroReferred(CompoundType item)
+        public void AddZeroReferred(CompoundType item)
         {
             zero_referred.Add(item);
         }
 
-        internal int CheckZeroReferred()
+        public int CheckZeroReferred()
         {
             while (zero_referred.Count > 0)
             {
@@ -114,7 +114,7 @@ namespace Neo.Types
             return references_count;
         }
 
-        internal void RemoveReference(StackItem referred, CompoundType parent)
+        public void RemoveReference(StackItem referred, CompoundType parent)
         {
             references_count--;
             if (referred is not CompoundType compound) return;
@@ -124,7 +124,7 @@ namespace Neo.Types
                 zero_referred.Add(compound);
         }
 
-        internal void RemoveStackReference(StackItem referred)
+        public void RemoveStackReference(StackItem referred)
         {
             references_count--;
             if (referred is not CompoundType item_compound) return;

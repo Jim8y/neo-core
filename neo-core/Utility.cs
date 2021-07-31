@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Neo.Core
 {
-    internal static class Utility
+    public static class Utility
     {
         public static Encoding StrictUTF8 { get; }
 

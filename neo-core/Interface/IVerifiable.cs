@@ -17,7 +17,7 @@ namespace Neo.Interface
         /// <summary>
         /// The witnesses of the <see cref="IVerifiable"/> object.
         /// </summary>
-        ISerializable[] Witnesses { get; set; }
+        public ISerializable[] Witnesses { get; set; }
 
         /// <summary>
         /// Deserializes the part of the <see cref="IVerifiable"/> object other than <see cref="Witnesses"/>.
